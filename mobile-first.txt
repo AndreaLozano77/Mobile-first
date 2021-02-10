@@ -1,0 +1,202 @@
+RESPONSIVE DESIGN: MAQUETACIÓN EN MOBILE FIRST
+
+¿Por qué al ícono se le tiene que colocar display:inline-block?
+
+El inline-block lo que hace es que el elemento no ocupe toda la línea, pero que también siga respetando las medidas que le pongas de alto y ancho. Si solo pusieras inline, no importaría que ponga 1000px de ancho, solo ocupará el contenido del elemento.
+
+===================================================
+Clase 3   El valor de Mobile First
+===================================================
+
+aprenderás el valor que entrega más allá de estar enfocado a las vistas móviles. Recuerda que en responsive design un diseño se adaptará a distintas vistas independientemente para cuál dispositivo se desarrolló primero y con este estándar primero crearemos para dispositivos móviles.
+
+¿Quiénes se ven beneficiados?
+Para desarrolladoras y desarrolladores: escalar es más sencillo
+Pasar un desarrollo con vista de escritorio a móvil requiere de realizar diversas consideraciones, puede tornarse complejo pues además esto implica tener que eliminar elementos de la vista y generalmente es más fácil añadirlos.
+
+Mobile First por el contrario hace de esta experiencia algo más llevadero y a nivel del código es bastante sencillo pasar de móvil a vistas más grandes, con la oportunidad de colocar componentes adicionales en el proceso.
+
+Para usuarios: menos es más y para más personas
+Sí, es cierto que cada vez es mayor la cantidad de personas navegando en dispositivos móviles y es que Mobile First no solo llega a más dispositivos por la enorme variedad de vistas disponibles en el mercado, sino también a más personas.
+
+La simplicidad en el diseño también ayuda a que tu comunicación sea efectiva hacia tus usuarios, brindando una experiencia de navegación agradable y que junto a un diseño accesible tu alcance aumente considerablemente.
+
+Esto también añade valor a tus usuarios con una velocidad de conexión limitada y/o dispositivos de gama baja.
+
+Para negocios: mejor posicionamiento en buscadores
+Google comenzó trabajar a inicios de 2018 con un algoritmo que otorga de mayor relevancia a aquellos sitios optimizados para móviles. Esto no afectará a aquellos sitios que tengan una versión de escritorio y móvil, pero sí penalizará a los que carezcan de una alternativa móvil.
+
+Para fines de SEO esto puede significar un menor rebote de usuarios si el contenido es lo suficientemente atractivo para retener la atención de los usuarios.
+
+Evolución progresiva
+Así como avanza la tecnología también podemos apreciar los cambios en tendencias del desarrollo frontend que incluso llegan a convertirse en estándares, como ha sido Mobile First.
+
+Primero desarrollamos para escritorio donde nuestro sitio web podía consumirse desde una computadora de escritorio y monitores en laptops. Después surgió la necesidad de adaptar estos sitios a dispositivos portátiles como teléfonos inteligentes y tablets.
+
+Al aumentar el consumo de sitios en dispositivos móviles surgió la necesidad de desarrollar primero para estos y después escalar a otras pantallas más grandes. Esta evolución ha llevado al punto en que algunos servicios estén disponibles cómo mobile-only, donde la única forma de consumirlos es desde un dispositivo móvil como el caso de aplicaciones financieras, de entregas a domicilio y otras más.
+
+Ahora sabes cuál es la razón por la que este estándar es tan importante actualmente en tus conocimientos como desarrolladora o desarrollador web. Además de que estás asegurándote de que tus sitios lleguen a más dispositivos y personas, también estás haciendo que tu código sea más fácil de escalar y de hacer modificaciones en el futuro. 
+
+===================================================
+Clase 4 Arquitectura Inicial
+===================================================
+La arquitectura web se puede definir como la forma en que las páginas de un sitio web están estructuradas y enlazadas entre sí (de manera lógica y coherente). Una arquitectura web ideal ayuda a los usuarios y a los motores de búsqueda a encontrar fácilmente lo que están buscando en un sitio web.
+
+
+===================================================
+Clase 8 Maquetación del header
+===================================================
+
+Las etiquetas ancla <a href=''></a>, nos permiten utilizar su atributo href para navegar entre las diferentes secciones.
+Las etiquetas <span></span>, es una etiqueta comodin que podemos utilizarla para incluir iconos.
+Las páginas web solo deben tener un <h1> por temas de SEO.
+===================================================
+Clase 9   Implementando BEM
+===================================================
+
+La propiedad align se utiliza para la alineación perpendicular al eje principal.
+
+Normalmente al declarar display:flex por default el eje principal es el horizontal, pero la propiedad flex-direction:column cambio el eje principal, ahora el eje principal es el vertical y por lo tanto align ahora funciona para alinear horizontalmente.
+
+El botón de header se conoce como botón flotante porque no está dentro de una sección o contenedor, sino entre dos contenedores.
+
+IMPLEMENTANDO BEM (Block, Element, Modifier)
+Es un enfoque basado en componentes para el desarrollo web, la idea es dividir la interfaz de usuario en bloques independientes.
+Bem es la metodología que vamos a usar a lo largo del curso, su objetivo es dividir lógicamente las piezas de las que se compone una web.
+
+Bem establece que debemos de usar clases para nuestros selectores, clases que se dividen en:
+
+Bloques: Los bloques son nuestros contenedores más grandes que a su vez se pueden anidar entre sí, pueden tener cualquier número de niveles de anidamiento.
+Su sintaxis es: block
+
+El nombre del bloque: describe su propósito (¿Qué es?), no su estado (¿Cómo se ve?).
+
+Elementos: Una parte compuesta de un bloque que no se pueden utilizar por separado, normalmente son los botones, textos, imágenes, etc.
+Su sintaxis es:
+**block-name__element-name **
+dos guiones abajo
+
+El nombre del elemento describe su propósito(¿Qué es esto? - item, text, etc), no su estado(“¿Cual es, o lo que hace que parezca?- red, big, etc”)
+
+Los elementos se pueden anidar unos dentro de otros, puede tener cualquier número de niveles de anidamiento.
+
+Un elemento siempre es parte de un bloque, no otro elemento. Esto significa que los nombres de los elementos no pueden definir una jerarquía como:
+block__elem1__elem2
+
+Modificadores: Los modificadores se usan para establecer estilos diferentes a uno mismo bloque o elemento.
+Su sintaxis es: block–modifier
+dos guiones
+Segun BEM
+block_modifier
+_un guion abajo _
+
+El nombre del modificador describe su apariencia ( “¿De qué tamaño?” O "¿Qué tema?), su estado ( “¿Cómo es diferente de los demás?”) y su comportamiento ( "¿Cómo se comporta? “o” ¿Cómo responde al usuario? "
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
+
+
+===================================================
+
+===================================================
